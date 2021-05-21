@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+
+  let mang1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe",  "Regulus"];
+  let mang2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+  let ten = prompt("Nhập vào Ngôi sao cần tìm: ");
+
+  function timKiem(chuoi) {
+    let dauRa = -1;
+    for (let i = 0; i < mang1.length; i++) {
+      if (chuoi == mang1[i]) {
+        dauRa = mang2[i];
+      }
+    }
+    return dauRa;
+  }
+
+  if (timKiem(ten) == -1) {
+    alert("Không có trong mảng!");
+  } else {
+    alert("chòm sao tương ứng là: " + timKiem(ten));
+  }
+</script>
 </body>
 </html>

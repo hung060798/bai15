@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" oninput="footToMeter()" onchange="footToMeter()" id="doi">
+<p>đổi feet sang mét: </p><span id="change"></span>
+<hr>
+<input type="number" oninput="meterToFoot()" onchange="meterToFoot()" id="doi1">
+<p>đổi feet sang mét: </p><span id="change1"></span>
+<script>
+    function footToMeter(foot){
+     foot = document.getElementById("doi").value
+      document.getElementById("change").innerHTML = 0.305*foot;
+    };
+    function meterToFoot(meter){
+     meter =document.getElementById("doi1").value
+        document.getElementById("change1").innerHTML = 3.279*meter;
+    };
+</script>
+</script>
+</body>
+</html>

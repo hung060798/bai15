@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let a= [1,2,3,4,5,1,1,6];
+  function ktra(b){
+    let count =0
+    for( let i=0;i<a.length;i++){
+      if (b== a[i]){
+        count++
+      }
+    }
+    if(count>0){return count}else return -1
+  }
+  alert(ktra(prompt("")))
+</script>
 </body>
 </html>
